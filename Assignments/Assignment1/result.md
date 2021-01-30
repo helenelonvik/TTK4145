@@ -1,0 +1,2 @@
+*I observe that both go and c beave very randomly such that the global variable ends up between -100000 and 100000 at the end. 
+> The reason is because the proeess runs the two non-atomic functions (increment and decrement) simultaniously, such that one prossess might read the value of i before the other process is finished with writing to memory. I is a shared resorce and therfore this might happen. This is a result of concurrency.
